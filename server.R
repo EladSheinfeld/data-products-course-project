@@ -1,4 +1,4 @@
-data(diamonds)
+diamonds <- read.csv(file = "diamonds.csv", stringsAsFactors = TRUE)
 fit <- lm(price~carat+cut+color+clarity, data = diamonds)
 
 
