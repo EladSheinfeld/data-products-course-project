@@ -14,7 +14,7 @@ This project aims to provide a simple yet elegant application to estimate the ex
 The Diamond Price Model
 ========================================================
 
-The diamonds dataframe has the following dimentions:
+The diamonds dataframe has the following dimensions:
 
 ```r
 dim(diamonds)
@@ -23,7 +23,7 @@ dim(diamonds)
 ```
 [1] 53940    11
 ```
-In order to achive the prediction, I've used a naive linear model fit as follows:
+In order to achieve the prediction, I've used a naive linear model fit as follows:
 
 ```r
 fit <- lm(price~carat+cut+color+clarity, data = diamonds)
@@ -31,7 +31,7 @@ fit <- lm(price~carat+cut+color+clarity, data = diamonds)
 
 Predicting in Shiny
 ========================================================
-As the application starts, it creates the linear model since the model calculation shoulden't change between requests or users.
+As the application starts, it creates the linear model since the model calculation shouldn't change between requests or users.
 
 ```r
 diamonds <- read.csv(file = "diamonds.csv", stringsAsFactors = TRUE)
